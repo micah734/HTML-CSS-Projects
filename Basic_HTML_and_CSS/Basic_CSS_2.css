@@ -1,0 +1,10 @@
+p {
+	background-color: lightgray;
+	color: deepskyblue;
+	font-style: oblique;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 2px 1px darkblue;
+	font-family: "Helvetica", sans-serif;
+
+}

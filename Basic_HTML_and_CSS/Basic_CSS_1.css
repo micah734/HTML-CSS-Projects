@@ -1,0 +1,11 @@
+p {color: #FF69B4; text-align: right}
+h1 {color: #4B0082; text-align: center;}
+h2 {color: #1E90FF; text-align: left;}
+h3 {color: #B22222; text-align: right;}
+body{
+	font-style:  italic;
+	text-align: center;
+}
+.Class_A {
+	color: blue;
+}

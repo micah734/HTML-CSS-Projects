@@ -21,7 +21,7 @@ SELECT ALL SQUARES IN THE ARRAY
 ----------------------------------*/
 
 .container .squares:nth-child(-n+4)  {
-    background-image: url("../Images/Icons/smiley_1.png")
+    background-image: url("../Images/Icons/smiley_1.png");
     color: #fff;
     float: left;
     width: 100px;
@@ -39,7 +39,7 @@ SELECT ALL SQUARES IN THE ARRAY
 HOVER , Transistions, animations
 -------------------------------*/
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../Images/Icons/smiley_2.png")
+    background-image: url("../Images/Icons/smiley_2.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;

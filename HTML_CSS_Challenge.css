@@ -1,0 +1,133 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 5px solid red;
+    border-radius: 150px;
+}
+
+
+footer {
+    text-align: center;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+table {
+    width:100%;
+    text-align:center;
+    border-collapse: collapse;
+ 
+}
+
+tr,
+th, td {
+    padding:10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color:lightblue;
+    font-weight: 900;
+}
+
+.containers {
+    position:relative;
+    text-align: center;
+    color: rgb(249, 249, 252);
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%)
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(33, 188, 216);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding:15px;
+    text-align: center;
+}
+
+.navbar a {
+    float:left;
+    display:block;
+    color:#f2f2f2;
+    text-align: center;
+    font-weight: 900;
+    padding: 15px 12px;
+    text-decoration:none;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.column {
+    float:left;
+    height:150px;
+    width: 50%;
+    margin-top:50px;
+    background-color:lightgray;
+    color: darkcyan;
+    font-size: 2em;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+    margin-top:50px;
+}
+
+p:hover {
+    background-color:rgb(125, 115, 196);
+    text-align: center;
+    font-size: 14px;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+    pointer:pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:dodgerblue;
+    overflow: hidden;
+    height: 100%;
+    opacity: 0;
+    transition:.5s ease;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.image {
+    display:block;
+    width: 100%;
+    height:auto
+}

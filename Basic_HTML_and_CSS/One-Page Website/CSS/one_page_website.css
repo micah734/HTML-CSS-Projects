@@ -126,7 +126,7 @@ nav {
 .close{
     color:white;
     position:absolute;
-    top:10px;
+    top:50px;
     right:25px;
     font-size:35px;
     font-weight:bold
@@ -204,6 +204,28 @@ img.hover-shadow {
 }
 
 img {
-    width:200px;
+    width:250px;
     height:300px;
 }
+
+.topnav {
+    background-color:#333;
+    overflow:hidden;
+    padding-bottom: 50px;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color:rgb(51, 3, 3);
+    color:#fefefe;
+    position:relative;
+}
+

@@ -8,151 +8,143 @@
 	<script src="./JS/one_page_website.js"></script>
 </head>
 
-<!--Navigation-->
-<div class="navbar">
-	<div class="menu-container">
-		<ul>
-			<a href="#home" id="link">
-				<li>HOME</li>
-			</a>
-			<a href="#gallery" id="link">
-				<li>GALLERY</li>
-			</a>
-			<a href="#video" id="link">
-				<li>VIDEOS</li>
-			</a>
-			<a href="#about_us">
-				<li>ABOUT US</li>
-			</a>
-		</ul>
-	</div>
-</div>
-<!--Navigation-->
-
-<!--Home-->
-<div id="home">
-
-	<body>
-		<h1> Learn about the Euphonium</h1>
-		<p>What is a Euphonium? Most people do not know. It is often confused with a Baritone but it is actually a
-			completely different instrument! See pictures of the instrument below.</p>
-	</body>
-</div>
-<!--End Home-->
-
-<!-- Pictures-->
-<section>
-	<div class="row">
-		<div class="column">
-			<img src="pictures/Euph_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-		</div>
-		<div class="column">
-			<img src="pictures/Euph_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-		</div>
-		<div class="column">
-			<img src="pictures/Euph_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-		</div>
-		<div class="column">
-			<img src="pictures/Euph_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+<body>
+	<!--Navigation-->
+	<div class="topnav">
+		<div class="menu-container">
+			<a href="#home">HOME</a>
+			<a href="#gallery">GALLERY</a>
+			<a href="#video">VIDEOS</a>
+			<a href="#about_us">ABOUT US</a>
 		</div>
 	</div>
-	<!--The Modal/Lightbox-->
-	<div id="myModal" class="modal">
-		<span class="close cursor" onclick="closeModal()">&times;</span>
-		<div class="modal-content">
-			<div class="mySlides">
-				<div class="numbertext">1/4</div>
-				<img src="pictures/Euph_1.jpeg" style="width:100%">
-			</div>
-			<div class="mySlides">
-				<div class="numbertext">2/4</div>
-				<img src="pictures/Euph_2.jpeg" style="width:100%">
-			</div>
-			<div class="mySlides">
-				<div class="numbertext">3/4</div>
-				<img src="pictures/Euph_3.jpg" style="width:100%">
-			</div>
-			<div class="mySlides">
-				<div class="numbertext">4/4</div>
-				<img src="pictures/Euph_4.jpg" style="width:100%">
-			</div>
-			<!--Next/Prev controls-->
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#100095;</a>
+	<!--Navigation-->
 
-			<!--Caption Text-->
-			<div class="caption-container">
-				<p id="caption"></p>
-			</div>
-
-			<!--Thumbnail Image Control-->
-			<div class="column">
-				<img class="pic" src="pictures/Euph_1.jpeg" onclick="currentSlide(1)" alt="picture of Euphonium">
-			</div>
-			<div class="column">
-				<img class="pic" src="pictures/Euph_2.jpeg" onclick="currentSlide(2)" alt="picture of Euphonium">
-			</div>
-			<div class="column">
-				<img class="pic" src="pictures/Euph_3.jpg" onclick="currentSlide(3)" alt="picture of Euphonium">
-			</div>
-			<div class="column">
-				<img class="pic" src="pictures/Euph_4.jpg" onclick="currentSlide(4)" alt="picture of Euphonium">
-			</div>
-		</div>
-	</div>
-</section>
-<!--End Gallery Section-->
-
-<!--Video Section-->
-<div id="video">
-	<section>
+	<!--Home-->
+	<div id="home">
 		<div>
-			<h1> Videos all about Euphonium </h1>
+			<h1> Learn about the Euphonium</h1>
+			<p>What is a Euphonium? Most people do not know. It is often confused with a Baritone but it is actually a
+				completely different instrument! See pictures of the instrument below.</p>
+		</div>>
+	</div>
+	<!--End Home-->
+
+	<!-- Pictures-->
+	<section id="gallery">
+		<div class="row">
+			<div class="column">
+				<img src="pictures/Euph_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="pictures/Euph_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="pictures/Euph_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="pictures/Euph_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
 		</div>
-		<div>
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/9nzWQFq6ce0"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-			<br>
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/RNwrQ_jhvtw"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+		<!--The Modal/Lightbox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1/4</div>
+					<img src="pictures/Euph_1.jpeg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="pictures/Euph_2.jpeg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3/4</div>
+					<img src="pictures/Euph_3.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4/4</div>
+					<img src="pictures/Euph_4.jpg" style="width:100%">
+				</div>
+				<!--Next/Prev controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--Caption Text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--Thumbnail Image Control-->
+				<div class="column">
+					<img class="pic" src="pictures/Euph_1.jpeg" onclick="currentSlide(1)" alt="picture of Euphonium">
+				</div>
+				<div class="column">
+					<img class="pic" src="pictures/Euph_2.jpeg" onclick="currentSlide(2)" alt="picture of Euphonium">
+				</div>
+				<div class="column">
+					<img class="pic" src="pictures/Euph_3.jpg" onclick="currentSlide(3)" alt="picture of Euphonium">
+				</div>
+				<div class="column">
+					<img class="pic" src="pictures/Euph_4.jpg" onclick="currentSlide(4)" alt="picture of Euphonium">
+				</div>
+			</div>
 		</div>
 	</section>
-</div>
-<!--End Video Section-->
+	<!--End Gallery Section-->
+
+	<!--Video Section-->
+	<div id="video">
+		<section>
+			<div>
+				<h1> Videos all about Euphonium </h1>
+			</div>
+			<div>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/9nzWQFq6ce0"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<br>
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/RNwrQ_jhvtw"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</section>
+	</div>
+	<!--End Video Section-->
 
 
-<!--About Us-->
-<div id="about_us">
-	<div class="reservation">
-		<div class="container-fluid">
+	<!--About Us-->
+	<div id="about_us">
+		<div class="reservation">
+			<div class="container-fluid">
 
-			<body>
-				<h1> For more information...</h1>
-				<h3> please fill out the form below</h3>
-			</body>
-			<form action="" method="push">
-				<input class="First Name" type="text" value="first_name">
-				<input class="Last Name" type="text" value="last_name">
-				<input class="Email" type="text" value="email">
-				<input class="Password" type="text" value="password">
-				<div class="submit">
-					<input type="Submit" value="submit">
-				</div>
-			</form>
+				<body>
+					<h1> For more information...</h1>
+					<h3> please fill out the form below</h3>
+				</body>
+				<form action="" method="push">
+					<input class="First Name" type="text" value="first_name">
+					<input class="Last Name" type="text" value="last_name">
+					<input class="Email" type="text" value="email">
+					<input class="Password" type="text" value="password">
+					<div class="submit">
+						<input type="Submit" value="submit">
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
-</div>
-<!--End About Us-->
 
-<!--Footer-->
-<div>
+	<!--End About Us-->
+
+	<!--Footer-->
 	<div>
-		<footer> All about the Euphonium &copy;2021</footer>
+		<div>
+			<footer> All about the Euphonium &copy;2021</footer>
+		</div>
 	</div>
-</div>
+</body>
 
 </html>

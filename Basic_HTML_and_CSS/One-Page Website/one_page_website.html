@@ -124,15 +124,25 @@
 					<h1> For more information...</h1>
 					<h3> please fill out the form below</h3>
 				</body>
-				<form action="" method="push">
-					<input class="First Name" type="text" value="first_name">
-					<input class="Last Name" type="text" value="last_name">
-					<input class="Email" type="text" value="email">
-					<input class="Password" type="text" value="password">
-					<div class="submit">
-						<input type="Submit" value="submit">
-					</div>
-				</form>
+				<form name="Info" onsubmit="return validateForm()" action="" method="push">
+					<script>function validateForm() {
+							let x = document.forms["myForm"]["fname"].value;
+							if (x == "") {
+								alert("Name must be filled out");
+								return false;
+							}
+						}</script>
+					<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+						Name: <input type="text" name="fname">
+
+						<input class="Last Name" type="text" value="last_name">
+						<input class="Email" type="text" value="email">
+						<input class="Phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="Phone Number">
+						<input class="Password" type="text" value="password">
+						<div class="submit">
+							<input type="Submit" value="submit">
+						</div>
+					</form>
 			</div>
 		</div>
 	</div>

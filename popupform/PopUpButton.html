@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUpButton</title>
+    <link rel="stylesheet" href="PopUpButton.css">
+</head>
+
+<body>
+    <button id="sticky" onclick="openForm()">Contact Us!</button>
+    <div class="form-popup" id="contact">
+        <form action="/action_page.php" class="form-container">
+            <h1>Contact Us!</h1>
+
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" crossorigin></script>
+        <script src="PopUpButton.js"></script>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</body>
+
+</html>

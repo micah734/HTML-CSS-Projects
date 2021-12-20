@@ -27,7 +27,7 @@ function showSlides(n) {
     var captionText = document.getElementById("caption");
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++){
+    for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
@@ -37,3 +37,4 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+

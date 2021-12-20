@@ -1,0 +1,144 @@
+html {
+    scroll-behavior: smooth;
+}
+{box-sizing: border-box;}
+
+.open-button {
+    background-color:cyan;
+    color:black;
+    padding: 16px 20px;
+    border: none;
+    cursor:pointer;
+    opacity:0.8;
+    position: fixed;
+    bottom:23px;
+    right:28px;
+    width: 280px;
+}
+
+.from-popup {
+    display:none;
+    position:fixed;
+    bottom:0;
+    right:15px;
+    border:3px solid black;
+    z-index:9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email] {
+    width: 100%;
+    padding:15px;
+    margin: 5px 0 22px 0;
+    border:none;
+    background:#f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color:#ddd;
+    outline: none;
+}
+
+
+.form-container .btn{
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    margin-bottom:10px;
+    opacity:0.8;
+}
+
+.form-container .cancel {
+    background-color:red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity:1;
+}
+
+
+h2{
+    width:300px;
+    height:100px;
+    background:green;
+    position:relative;
+    animation:mymove 5s infinite;
+}
+
+@keyframes mymove{
+    0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;}
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+@keyframes zoominoutsinglefeatured {
+    0%{
+        transform:scale(1,1);
+    }
+    50%{
+        transform:scale(1.2,1.2);
+    }
+    100%{
+        transform:scale(1,1);
+    }
+}
+
+#toppicture {
+    height:500px;
+    width:1000px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    animation: zoominoutsinglefeatured 15s forwards;
+}
+
+#section1 {
+  height: 600px;
+  background-color: rgb(192, 255, 241);
+}
+
+#section2 {
+  height: 600px;
+  background-color: rgb(232, 199, 228);
+}
+
+
+#slideshow  {
+    margin: 50px auto;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position:absolute;
+    top:10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#sticky {
+    margin-right: 1 px;
+    bottom: 0;
+    width:100%;
+    background-color:darkcyan;
+    text-align:center;
+    font-size: 16px;
+    border-radius:8px;
+    position:sticky;
+    position:-webkit-sticky;
+}
